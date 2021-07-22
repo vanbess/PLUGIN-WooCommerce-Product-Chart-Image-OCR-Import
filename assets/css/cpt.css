@@ -1,0 +1,83 @@
+div#ocr_chart_metabox label {
+    display: block;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+div#ocr_chart_metabox input {
+    margin-bottom: 15px;
+}
+
+a#ocr_add_header_image, a#ocr_add_main_image {
+    display: block;
+    width: 150px;
+    text-align: center;
+    border: 2px dashed #ddd;
+    height: 150px;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 5;
+    color: #666;
+    margin-bottom: 15px;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+
+.ocr_original_chart_img {
+    display: inline-block;
+    width: 48%;
+}
+
+.ocr_parsed_data {
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+}
+
+.ocr_chart_images_parsed_data_cont {
+    position: relative;
+}
+
+span.ocr_help {
+    display: block;
+    padding-bottom: 10px;
+}
+
+button#ocr_parsed_header_data_update {
+    margin-bottom: 20px;
+}
+
+/* chart images */
+img#ocr_chart_header_image,img#ocr_chart_main_image {
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.ocr_header_img_cont,.ocr_main_img_cont {
+    position: relative;
+}
+
+a#ocr_remove_header_img, a#ocr_remove_main_img {
+    display: block;
+    position: absolute;
+    right: 8%;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px #0000008c;
+}
+
+button#ocr_parse_header_image,button#ocr_parse_header_image {
+    margin-bottom: 15px;
+}
+
