@@ -1,5 +1,28 @@
 jQuery( document ).ready( function ( $ ) {
 
+    // **********************************
+    // retrieve image from provided link
+    // **********************************
+    $( 'button#ocr_retrieve_original_image' ).on( 'click', function ( e ) {
+
+        e.preventDefault();
+
+        var url = $( 'input#ocr_chart_original_image' ).val();
+        var error = $( 'input#ocr_chart_original_image' ).attr( 'data-error' );
+
+        if ( url ) {
+            $( 'img#ocr_chart_original_image' ).attr( 'src', url );
+            $( 'img#ocr_chart_original_image' ).show();
+            $( 'input#ocr_chart_original_image' ).attr( 'placeholder', '' );
+            $( 'input#ocr_chart_original_image' ).css('border-color', '#8c8f94' );
+        } else {
+            $( 'img#ocr_chart_original_image' ).hide();
+            $( 'input#ocr_chart_original_image' ).attr( 'placeholder', error );
+            $( 'input#ocr_chart_original_image' ).css('border-color', 'red' );
+        }
+
+    } );
+
     // ********************
     // upload header image
     // ********************

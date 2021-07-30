@@ -1,6 +1,7 @@
 <?php
 
-function ocr_register_ocr_chart_cpt() {
+// custom post type for handling OCR data
+function cptui_register_my_cpts_ocr_chart() {
 
     /**
      * Post Type: OCR Charts.
@@ -62,11 +63,11 @@ function ocr_register_ocr_chart_cpt() {
             "query_var"             => true,
             "menu_position"         => 5,
             "menu_icon"             => "dashicons-chart-bar",
-            "supports"              => [ "title"],
+            "supports"              => [ "title" ],
             "show_in_graphql"       => false,
     ];
 
     register_post_type( "ocr_chart", $args );
 }
 
-add_action( 'init', 'ocr_register_ocr_chart_cpt' );
+add_action( 'init', 'cptui_register_my_cpts_ocr_chart' );
